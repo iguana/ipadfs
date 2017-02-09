@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
+        web.loadRequest(NSURLRequest(URL: NSURL(string: "https://v.vipecloud.com/dashboard")!))
+
 //        web.loadRequest(NSURLRequest(URL: NSURL(string: "http://color2017.com/ipad.php")!))
-        web.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.google.com/")!))
+//        web.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.google.com/")!))
     }
 
     override func didReceiveMemoryWarning() {

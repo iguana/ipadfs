@@ -39,7 +39,17 @@
 	</array>
     <key>NSAppTransportSecurity</key>
     <dict>
-       <key>NSAllowsArbitraryLoads</key><true/>
+        <key>NSAllowsArbitraryLoads</key><true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>color2017.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>    
     </dict>
 </dict>
 </plist>
