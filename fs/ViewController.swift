@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        web.loadRequest(NSURLRequest(URL: NSURL(string: "https://v.vipecloud.com/dashboard")!))
+//        web.loadRequest(URLRequest(url: URL(string: "https://v.vipecloud.com/dashboard")!))
 
-//        web.loadRequest(NSURLRequest(URL: NSURL(string: "http://color2017.com/ipad.php")!))
+        web.loadRequest(URLRequest(url: URL(string: "http://color2017.com/ipad.php")!))
 //        web.loadRequest(NSURLRequest(URL: NSURL(string: "https://www.google.com/")!))
     }
 
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
